@@ -1,31 +1,31 @@
-2026-09-22 06:50:13 | INFO     | qiemf | ======================================================================
-2026-09-22 06:50:13 | INFO     | qiemf | QIEMF Proof-of-Concept — starting full pipeline (seed=42)
-2026-09-22 06:50:13 | INFO     | qiemf | ======================================================================
-2026-09-22 06:50:13 | INFO     | qiemf | Loading Breast Cancer Wisconsin dataset from sklearn.datasets.
-2026-09-22 06:50:13 | INFO     | qiemf | Dataset loaded: 569 samples, 30 features, classes=[np.str_('malignant'), np.str_('benign')] (0=malignant, 1=benign).
-2026-09-22 06:50:13 | INFO     | qiemf | Train/test split complete: train=455, test=114 (stratified, seed=42).
-2026-09-22 06:50:13 | INFO     | qiemf | Primary model (XGBoostClassifier) trained successfully.
-2026-09-22 06:50:13 | INFO     | qiemf | Model performance: {'Accuracy': 0.9561, 'Precision': 0.9467, 'Recall': 0.9861, 'F1 Score': 0.966, 'ROC-AUC': 0.9947}
-2026-09-22 06:50:13 | INFO     | qiemf | Building SHAP TreeExplainer and computing explanations for the test set.
-2026-09-22 06:50:13 | INFO     | qiemf | SHAP explanations computed for 114 test samples.
-2026-09-22 06:50:13 | INFO     | qiemf | Computing QIEMF metric suite (EE, EFS, FCI, ISM, RTS, QEI).
-2026-09-22 06:50:13 | INFO     | qiemf | Identified 73 correlated feature pairs (|r| > 0.70).
-2026-09-22 06:50:13 | INFO     | qiemf | QIEMF metrics computed for 114 test samples.
-2026-09-22 06:50:13 | INFO     | qiemf | High-QEI vs low-QEI group comparison computed (n=20 per group).
-2026-09-22 06:50:13 | INFO     | qiemf | Running simulated failure analysis (shuffle, noise, important-feature corruption).
-2026-09-22 06:50:13 | INFO     | qiemf | Failure analysis complete:
+2026-09-22 07:01:54 | INFO     | qiemf | ======================================================================
+2026-09-22 07:01:54 | INFO     | qiemf | QIEMF Proof-of-Concept — starting full pipeline (seed=42)
+2026-09-22 07:01:54 | INFO     | qiemf | ======================================================================
+2026-09-22 07:01:54 | INFO     | qiemf | Loading Breast Cancer Wisconsin dataset from sklearn.datasets.
+2026-09-22 07:01:54 | INFO     | qiemf | Dataset loaded: 569 samples, 30 features, classes=[np.str_('malignant'), np.str_('benign')] (0=malignant, 1=benign).
+2026-09-22 07:01:54 | INFO     | qiemf | Train/test split complete: train=455, test=114 (stratified, seed=42).
+2026-09-22 07:01:54 | INFO     | qiemf | Primary model (XGBoostClassifier) trained successfully.
+2026-09-22 07:01:54 | INFO     | qiemf | Model performance: {'Accuracy': 0.9561, 'Precision': 0.9467, 'Recall': 0.9861, 'F1 Score': 0.966, 'ROC-AUC': 0.9947}
+2026-09-22 07:01:54 | INFO     | qiemf | Building SHAP TreeExplainer and computing explanations for the test set.
+2026-09-22 07:01:54 | INFO     | qiemf | SHAP explanations computed for 114 test samples.
+2026-09-22 07:01:54 | INFO     | qiemf | Computing QIEMF metric suite (EE, EFS, FCI, ISM, RTS, QEI).
+2026-09-22 07:01:54 | INFO     | qiemf | Identified 73 correlated feature pairs (|r| > 0.70).
+2026-09-22 07:01:54 | INFO     | qiemf | QIEMF metrics computed for 114 test samples.
+2026-09-22 07:01:54 | INFO     | qiemf | High-QEI vs low-QEI group comparison computed (n=20 per group).
+2026-09-22 07:01:54 | INFO     | qiemf | Running simulated failure analysis (shuffle, noise, important-feature corruption).
+2026-09-22 07:01:54 | INFO     | qiemf | Failure analysis complete:
                       Method       EE  EE_norm      EFS      FCI      ISM      RTS      QEI
        Baseline (Unmodified) 3.930542 0.801025 0.746476 0.364125 0.997493 0.467520 0.622219
        Shuffled Attributions 3.930542 0.801025 0.277845 0.340706 0.205403 0.273042 0.263459
          Strong Random Noise 4.509261 0.918965 0.359013 0.568926 0.221960 0.338593 0.334851
 Perturbed Important Features 3.172432 0.646526 0.708599 0.274974 0.000000 0.471974 0.361887
-2026-09-22 06:50:13 | INFO     | qiemf | Generating publication-quality visualizations.
-2026-09-22 06:50:17 | INFO     | qiemf | All figures saved to /home/user/quantum-inspired-explainability/figures
-2026-09-22 06:50:17 | INFO     | qiemf | Building and exporting publication-quality tables.
-2026-09-22 06:50:17 | INFO     | qiemf | Tables A-E exported to /home/user/quantum-inspired-explainability/tables
-2026-09-22 06:50:17 | INFO     | qiemf | ======================================================================
-2026-09-22 06:50:17 | INFO     | qiemf | QIEMF pipeline completed successfully.
-2026-09-22 06:50:17 | INFO     | qiemf | Figures : /home/user/quantum-inspired-explainability/figures
-2026-09-22 06:50:17 | INFO     | qiemf | Tables  : /home/user/quantum-inspired-explainability/tables
-2026-09-22 06:50:17 | INFO     | qiemf | Results : /home/user/quantum-inspired-explainability/results
-2026-09-22 06:50:17 | INFO     | qiemf | ======================================================================
+2026-09-22 07:01:54 | INFO     | qiemf | Generating publication-quality visualizations.
+2026-09-22 07:01:58 | INFO     | qiemf | All figures saved to /home/user/quantum-inspired-explainability/figures
+2026-09-22 07:01:58 | INFO     | qiemf | Building and exporting publication-quality tables.
+2026-09-22 07:01:58 | INFO     | qiemf | Tables A-E exported to /home/user/quantum-inspired-explainability/tables
+2026-09-22 07:01:58 | INFO     | qiemf | ======================================================================
+2026-09-22 07:01:58 | INFO     | qiemf | QIEMF pipeline completed successfully.
+2026-09-22 07:01:58 | INFO     | qiemf | Figures : /home/user/quantum-inspired-explainability/figures
+2026-09-22 07:01:58 | INFO     | qiemf | Tables  : /home/user/quantum-inspired-explainability/tables
+2026-09-22 07:01:58 | INFO     | qiemf | Results : /home/user/quantum-inspired-explainability/results
+2026-09-22 07:01:58 | INFO     | qiemf | ======================================================================
